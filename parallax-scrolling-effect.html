@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Scrolling Effect</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    .parallax{
+        background-image: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1920&q=80');
+        height: 100vh;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .parallax2{
+        background-image: url('https://images.unsplash.com/photo-1632834784573-f212a0b4586b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1172');
+        height: 100vh;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .content{
+        background: #fff;
+        color: #333;
+        text-align: center;
+        padding: 100px 20px;
+    }
+    .content h1{
+        margin-bottom: 20px;
+        font-size: 40px;
+    }
+    .content p{
+        max-width: 700px;
+        margin: 0 auto;
+        line-height: 1.8;
+        font-size: 18px;
+        color: #666;
+    }
+</style>
+<body>
+    <section class="parallax"></section>
+
+    <section class="content">
+        <h1>Beautiful Parallax Scrolling Effect</h1>
+        <p>Scroll down to see the mountain background stay fixed while the content moves smoothly. This creates a stunning depth illusion using just HTML and CSS.</p>
+    </section>
+
+    <section class="parallax2"></section>
+
+    <section class="content">
+        <h1>Simple and Effective</h1>
+        <p>No Javascript required! Just the "background-attachment: fixed;" CSS property and a high-quality image make this effect beautiful and lightweight for web pages.</p>
+    </section>
+</body>
+</html>
