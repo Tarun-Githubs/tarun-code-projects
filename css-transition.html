@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css transition</title>
+</head>
+<style>
+  body{
+    background: #f4f4f4;
+    font-family: sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    gap: 40px;
+    justify-content: center;
+  }
+  .box{
+    width: 180px;
+    height: 120px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+
+  .color:hover{
+    background: #ff6f61;
+    color: white;
+  }
+  .scale{
+    transition: transition 0.3s ease;
+  }
+  .scale:hover{
+    transform: scale(1.15);
+    transition: 0.2s ease-in-out;
+  }
+  .rotate{
+    transition: transform 0.4s;
+  }
+  .rotate:hover{
+    transform: rotate(12deg);
+  }
+  .opacity{
+    transition: opacity 0.4s;
+  }
+  .opacity:hover{
+    opacity: 0.4;
+  }
+  .border{
+    transition: border 0.3s;
+    border: 3px solid transparent;
+  }
+  .border:hover{
+    border: 3px solid #0077ff;
+  }
+  .shadow{
+    transition: box-shadow 0.3s;
+  }
+  .shadow:hover{
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  }
+  .move{
+    transition: transform 0.3s;
+  }
+  .move:hover{
+    transform: translateY(-12px);
+  }
+  .multi{
+    transition: transform 0.3s, transform 0.3s, box-shadow 0.3s;
+  }
+  .multi:hover{
+    background: #222;
+    color: white;
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+  }
+
+</style>
+<body>
+  <div class="box color">Color</div>
+  <div class="box scale">Scale</div>
+  <div class="box rotate">Rotate</div>
+  <div class="box opacity">Opacity</div>
+  <div class="box border">Border</div>
+  <div class="box shadow">Shadow</div>
+  <div class="box move">Translate</div>
+  <div class="box multi">Multi</div>
+</body>
+</html>
